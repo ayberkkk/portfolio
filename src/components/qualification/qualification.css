@@ -13,6 +13,7 @@
     font-weight: var(-font-medium);
     color: var(--title-color);
     margin-bottom: 0 var(--mb-1);
+    margin-left: 15px;
 }
 
 .qualification__button:hover {

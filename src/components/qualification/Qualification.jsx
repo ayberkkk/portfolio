@@ -47,11 +47,15 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Desing</h3>
-                <span className="qualification__subtitle">Lorem.</span>
+                <h3 className="qualification__title">
+                  Bursa Uludag University{" "}
+                </h3>
+                <span className="qualification__subtitle">
+                  Management Information Systems
+                </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>
-                  2021-present
+                  October 2018 - June 2022
                 </div>
               </div>
               <div>
@@ -60,52 +64,6 @@ const Qualification = () => {
               </div>
             </div>
 
-            <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-              <div>
-                <h3 className="qualification__title">Art Director</h3>
-                <span className="qualification__subtitle">Lorem.</span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>
-                  2021-present
-                </div>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Web Desing</h3>
-                <span className="qualification__subtitle">Lorem.</span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>
-                  2021-present
-                </div>
-              </div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-              <div>
-                <h3 className="qualification__title">Art Director</h3>
-                <span className="qualification__subtitle">Lorem.</span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i>
-                  2021-present
-                </div>
-              </div>
-            </div>
           </div>
           <div
             className={
@@ -116,11 +74,13 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Desing</h3>
-                <span className="qualification__subtitle">Lorem.</span>
+                <h3 className="qualification__title">Serenay Yazılım</h3>
+                <span className="qualification__subtitle">
+                  Jr. Frontend Developer
+                </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>
-                  2021-present
+                  2022 - present
                 </div>
               </div>
               <div>
@@ -136,12 +96,31 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Art Director</h3>
-                <span className="qualification__subtitle">Lorem.</span>
+                <h3 className="qualification__title">Serenay Yazılım</h3>
+                <span className="qualification__subtitle">
+                  Jr. Frontend Developer (Intern)
+                </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>
-                  2021-present
+                  February 2021 - June 2022
                 </div>
+              </div>
+            </div>
+
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">Blueit </h3>
+                <span className="qualification__subtitle">
+                  Jr. Frontend Developer (Volunteer)
+                </span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calendar-alt"></i>
+                  October 2021 - June 2022 
+                </div>
+              </div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
               </div>
             </div>
           </div>

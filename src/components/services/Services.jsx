@@ -65,11 +65,11 @@ const Services = () => {
             <i className="uil uil-arrow services__icon"></i>
             <h3 className="services__title">UI / UX</h3>
           </div>
-          <span className="services__button" onClick={() => toggleTab(1)}>
+          <span className="services__button" onClick={() => toggleTab(2)}>
             View More
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
-          <div className="services__modal">
+          <div className={toggleState ===2 ? "services__modal active-modal" : "services__modal"}>
             <div className="services__modal-content">
               <i className="uil uil-times services__modal-close" onClick={() => toggleTab(0)}></i>
               <h3 className="services__modal-title">UI / UX</h3>
@@ -108,11 +108,11 @@ const Services = () => {
             <i className="uil uil-edit services__icon"></i>
             <h3 className="services__title">End-user tests</h3>
           </div>
-          <span className="services__button" onClick={() => toggleTab(1)}>
+          <span className="services__button" onClick={() => toggleTab(3)}>
             View More
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
-          <div className="services__modal">
+          <div className={toggleState ===3 ? "services__modal active-modal" : "services__modal"}>
             <div className="services__modal-content">
               <i className="uil uil-times services__modal-close" onClick={() => toggleTab(0)}></i>
               <h3 className="services__modal-title">End-user tests</h3>
