@@ -10,7 +10,6 @@ const Qualification = () => {
     <section className="qualification section">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My Personel Journey</span>
-
       <div className="qualification__container container">
         <div className="qualification__tabs">
           <div
@@ -63,7 +62,6 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
             </div>
-
           </div>
           <div
             className={
@@ -80,7 +78,7 @@ const Qualification = () => {
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i>
-                  2022 - present
+                  February 2022 - March 2023
                 </div>
               </div>
               <div>

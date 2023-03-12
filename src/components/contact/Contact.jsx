@@ -15,7 +15,10 @@ const contact = () => {
               <i className="bx bx-mail-send contact__card-icon"></i>
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">ayberktiglii@gmail.com</span>
-              <a href="" className="contact__button">
+              <a
+                href="mailto:ayberktiglii@gmail.com"
+                className="contact__button"
+              >
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
@@ -33,7 +36,7 @@ const contact = () => {
             </div>
 
             <div className="contact__form-div">
-              <label className="contact__form-tag">Email</label>
+              <label className="contact__form-tag">Subject</label>
               <input type="email" name="mail" className="contact__form-input" />
             </div>
             <div className="contact__form-div contact__form-area">

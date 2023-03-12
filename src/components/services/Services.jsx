@@ -15,45 +15,59 @@ const Services = () => {
         <div className="services__content">
           <div>
             <i className="uil uil-image services__icon"></i>
-            <h3 className="services__title">
-              Web Page Desinger
-            </h3>
+            <h3 className="services__title">Web Page Desinger</h3>
           </div>
           <span className="services__button" onClick={() => toggleTab(1)}>
             View More
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
-          <div className={toggleState ===1 ? "services__modal active-modal" : "services__modal"}>
+          <div
+            className={
+              toggleState === 1
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
             <div className="services__modal-content">
               <i
                 onClick={() => toggleTab(0)}
                 className="uil uil-times services__modal-close"
               ></i>
               <h3 className="services__modal-title">Web Page Desinger</h3>
-              <p className="services__modal-description">Loading...</p>
+              <p className="services__modal-description">
+                My Personal and Company Work
+              </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__moda-icon"></i>
+                  <p className="services__modal-info">My own website</p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__moda-icon"></i>
+                  <p className="services__modal-info">NFT's</p>
+                </li>
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__moda-icon"></i>
                   <p className="services__modal-info">
-                    Lorem ipsum dolor sit amet.
+                    Bank mobile application promotion site
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__moda-icon"></i>
                   <p className="services__modal-info">
-                    Lorem ipsum dolor sit amet.
+                    Software Company website
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__moda-icon"></i>
                   <p className="services__modal-info">
-                    Lorem ipsum dolor sit amet.
+                    Different B2B-B2C website projects
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__moda-icon"></i>
                   <p className="services__modal-info">
-                    Lorem ipsum dolor sit amet.
+                    Corporate website projects
                   </p>
                 </li>
               </ul>
@@ -69,34 +83,26 @@ const Services = () => {
             View More
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
-          <div className={toggleState ===2 ? "services__modal active-modal" : "services__modal"}>
+          <div
+            className={
+              toggleState === 2
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
             <div className="services__modal-content">
-              <i className="uil uil-times services__modal-close" onClick={() => toggleTab(0)}></i>
+              <i
+                className="uil uil-times services__modal-close"
+                onClick={() => toggleTab(0)}
+              ></i>
               <h3 className="services__modal-title">UI / UX</h3>
               <p className="services__modal-description">Loading...</p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__moda-icon"></i>
                   <p className="services__modal-info">
-                    Lorem ipsum dolor sit amet.
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__moda-icon"></i>
-                  <p className="services__modal-info">
-                    Lorem ipsum dolor sit amet.
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__moda-icon"></i>
-                  <p className="services__modal-info">
-                    Lorem ipsum dolor sit amet.
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__moda-icon"></i>
-                  <p className="services__modal-info">
-                    Lorem ipsum dolor sit amet.
+                    I have just switched to UI & UX field and I am developing
+                    myself with different projects.
                   </p>
                 </li>
               </ul>
@@ -112,34 +118,26 @@ const Services = () => {
             View More
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
-          <div className={toggleState ===3 ? "services__modal active-modal" : "services__modal"}>
+          <div
+            className={
+              toggleState === 3
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
             <div className="services__modal-content">
-              <i className="uil uil-times services__modal-close" onClick={() => toggleTab(0)}></i>
+              <i
+                className="uil uil-times services__modal-close"
+                onClick={() => toggleTab(0)}
+              ></i>
               <h3 className="services__modal-title">End-user tests</h3>
-              <p className="services__modal-description">Loading...</p>
+              <p className="services__modal-description"></p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__moda-icon"></i>
                   <p className="services__modal-info">
-                    Lorem ipsum dolor sit amet.
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__moda-icon"></i>
-                  <p className="services__modal-info">
-                    Lorem ipsum dolor sit amet.
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__moda-icon"></i>
-                  <p className="services__modal-info">
-                    Lorem ipsum dolor sit amet.
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__moda-icon"></i>
-                  <p className="services__modal-info">
-                    Lorem ipsum dolor sit amet.
+                    I have done end-user and accessibility tests on personal and
+                    company sites that I have done.
                   </p>
                 </li>
               </ul>
