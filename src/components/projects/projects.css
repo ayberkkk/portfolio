@@ -1,0 +1,67 @@
+.projects__container {
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    column-gap: 1.8rem;
+    text-align: center;
+}
+
+.project__content {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--container-color);
+    padding: 2rem;
+    cursor: pointer;
+    box-shadow: transparent;
+    transition: 0.4s;
+}
+
+.project__content:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16), 0 4px 10px rgba(0, 0, 0, 0.23);
+}
+
+.project__title {
+    font-size: var(--h3-font-size);
+    margin-top: var(--mb-1);
+    font-weight: var(--font-medium);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    visibility: hidden;
+    transition: .3s;
+    opacity: 0;
+}
+
+.modal__active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal .content {
+    width: 80%;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 1.25rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .projects__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .modal .content {
+        width: 100%;
+        padding: 1rem;
+    }
+}
