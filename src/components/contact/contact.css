@@ -140,6 +140,11 @@
     .contact__form {
        width: 100%;
     }
+    .btn__div {
+        display: table;
+        width: initial;
+        margin: auto;
+    }
 }
 
 /* For small devices */
