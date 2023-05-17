@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LazyLoad from "react-lazyload";
 import "./projects.css";
 import pr_1 from "../../assets/videos/cartoon.mp4";
 import pr_2 from "../../assets/videos/nft.mp4";
@@ -14,7 +15,16 @@ import pr_ss_4 from "../../assets/web-ss/ss-4.png";
 import pr_ss_5 from "../../assets/web-ss/ss-5.png";
 import pr_ss_6 from "../../assets/web-ss/ss-6.png";
 
-const Projects = () => {
+const Project = React.memo(({ image, title, onClick }) => (
+  <div className="project__content" onClick={onClick}>
+    <LazyLoad>
+      <img src={image} alt={title} />
+    </LazyLoad>
+    <h2 className="project__title">{title}</h2>
+  </div>
+));
+
+const Projects = React.memo(() => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
@@ -33,51 +43,59 @@ const Projects = () => {
       <h2 className="section__title">Projects</h2>
       <span className="section__subtitle">Sample Website Projects</span>
       <div className="projects__container container grid">
-        <div className="project__content" onClick={() => openModal(pr_1)}>
-          <img src={pr_ss_1} alt="Cartoon" />
-          <h2 className="project__title">Cartoon - Animation Company</h2>
-        </div>
-        <div className="project__content" onClick={() => openModal(pr_2)}>
-          <img src={pr_ss_4} alt="NFT's" />
-          <h2 className="project__title">NFT's - NFT Marketplace </h2>
-        </div>
-        <div className="project__content" onClick={() => openModal(pr_3)}>
-          <img src={pr_ss_5} alt="Nursery" />
-          <h2 className="project__title">Nursery</h2>
-        </div>
-        <div className="project__content" onClick={() => openModal(pr_4)}>
-          <img src={pr_ss_3} alt="Nursery - 2" />
-          <h2 className="project__title">Nursery 2 (Continuing)</h2>
-        </div>
-        <div className="project__content" onClick={() => openModal(pr_5)}>
-          <img src={pr_ss_6} alt="Software" />
-          <h2 className="project__title">SandBox - Software Company</h2>
-        </div>
-        <div className="project__content" onClick={() => openModal(pr_6)}>
-          <img src={pr_ss_2} alt="Landing Page" />
-          <h2 className="project__title">Mosto - Bank APP</h2>
-        </div>
+        <Project
+          image={pr_ss_1}
+          title="Cartoon - Animation Company"
+          onClick={() => openModal(pr_1)}
+        />
+        <Project
+          image={pr_ss_4}
+          title="NFT's - NFT Marketplace"
+          onClick={() => openModal(pr_2)}
+        />
+        <Project
+          image={pr_ss_5}
+          title="Nursery"
+          onClick={() => openModal(pr_3)}
+        />
+        <Project
+          image={pr_ss_3}
+          title="Nursery 2 (Continuing)"
+          onClick={() => openModal(pr_4)}
+        />
+        <Project
+          image={pr_ss_6}
+          title="SandBox - Software Company"
+          onClick={() => openModal(pr_5)}
+        />
+        <Project
+          image={pr_ss_2}
+          title="Mosto - Bank APP"
+          onClick={() => openModal(pr_6)}
+        />
       </div>
       {modalOpen && (
         <div className="modal modal__active" onClick={closeModal}>
           <div className="content">
-            <video
-              width="100%"
-              height="auto"
-              autoplay=""
-              muted=""
-              loop=""
-              playsinline=""
-              data-wf-ignore="true"
-              data-object-fit="cover"
-            >
-              <source src={selectedVideo} type="video/mp4" />
-            </video>
+            <LazyLoad>
+              <video
+                width="100%"
+                height="auto"
+                autoPlay
+                muted
+                loop
+                playsInline
+                data-wf-ignore="true"
+                data-object-fit="cover"
+              >
+                <source src={selectedVideo} type="video/mp4" />
+              </video>
+            </LazyLoad>
           </div>
         </div>
       )}
     </section>
   );
-};
+});
 
 export default Projects;
