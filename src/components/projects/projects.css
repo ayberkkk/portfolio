@@ -54,6 +54,16 @@
     border-radius: 1.25rem;
 }
 
+.github {
+    display: table;
+    margin: auto 0;
+    width: initial;
+}
+
+.uil-github-alt {
+    font-size: 18px;
+    margin-left: 10px;
+}
 
 @media screen and (max-width: 768px) {
     .projects__container {

@@ -60,7 +60,7 @@ const Projects = React.memo(() => {
         />
         <Project
           image={pr_ss_3}
-          title="Nursery 2 (Continuing)"
+          title="Minik Kalpler (Continuing)"
           onClick={() => openModal(pr_4)}
         />
         <Project
@@ -73,6 +73,19 @@ const Projects = React.memo(() => {
           title="Mosto - Bank APP"
           onClick={() => openModal(pr_6)}
         />
+        <div></div>
+         <div className="github">
+          <a
+            href="https://github.com/ayberkkk"
+            className="button button--flex"
+            target="_blank"
+            rel="noreferrer"
+          >
+            All Project
+            <i className="uil uil-github-alt"></i>
+          </a>
+        </div>
+        <div></div>
       </div>
       {modalOpen && (
         <div className="modal modal__active" onClick={closeModal}>

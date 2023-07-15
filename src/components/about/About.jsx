@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import AboutImg from "../../assets/me.jpg";
-import CV from "../../assets/AyberkTigli_CV.pdf";
+import CV from "../../assets/AyberkTigli.pdf";
 import Info from "./Info";
 const about = () => {
   return (
@@ -9,7 +9,7 @@ const about = () => {
       <h2 className="section__title">About Me</h2>
       <span className="section__subtitle">My Introduction</span>
       <div className="about__container container grid">
-        <img src={AboutImg} className="about__img" alt="about-img"/>
+        <img src={AboutImg} className="about__img" alt="about-img" />
         <div className="about__data">
           <Info />
           <p className="about_description">

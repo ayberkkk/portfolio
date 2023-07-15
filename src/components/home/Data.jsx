@@ -60,7 +60,7 @@ const Data = () => {
       <p className="home__description">
         Hello, I'm Ayberk Tığlı, I am a graduate of Bursa Uludağ University
         Management Information Systems Department. I am progressing in the field
-        of Front Development and developing projects.
+        of Frontend Development and developing projects.
       </p>
       <a href="#contact" className="button button--flex">
         Say Hello
