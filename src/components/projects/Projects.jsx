@@ -60,8 +60,9 @@ const Projects = React.memo(() => {
         />
         <Project
           image={pr_ss_3}
-          title="Minik Kalpler (Continuing)"
+          title="Özel Minik Kalpler Koleji"
           onClick={() => openModal(pr_4)}
+          href="ozelminikkalplerkoleji.com"
         />
         <Project
           image={pr_ss_6}
@@ -74,7 +75,7 @@ const Projects = React.memo(() => {
           onClick={() => openModal(pr_6)}
         />
         <div></div>
-         <div className="github">
+        <div className="github">
           <a
             href="https://github.com/ayberkkk"
             className="button button--flex"
